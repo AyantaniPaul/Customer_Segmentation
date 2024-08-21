@@ -53,10 +53,3 @@ This dataset provides customer information to predict customer attrition for a c
 
 ## KMeans Clustering and how it works?
 K-Means Clustering is an Unsupervised Machine Learning algorithm, which groups the unlabeled dataset into different clusters. The algorithm assigns data points to one of the K clusters depending on their distance from the center of the clusters. It starts by randomly assigning the clusters centroid in the space. Then each data point assign to one of the cluster based on its distance from centroid of the cluster. After assigning each point to one of the cluster, new cluster centroids are assigned. This process runs iteratively until it finds good cluster. In the analysis we assume that number of cluster is given in advanced and we have to put points in one of the group.
-The choice of optimal value of k is found using the elbow method. 
-- _Elbow Method_  \
-  Elbow Method is a technique that we use to determine the number of centroids(k) to use in a k-means clustering algorithm.  In this method to determine the k-value we continuously iterate     for k=1 to k=n (Here n is the hyperparameter that we choose as per our requirement). For every value of k, we calculate the within-cluster sum of squares (WCSS) value (WCSS - It is defined     as the sum of square distances between the centroids and each points).
-  Now For determining the best number of clusters(k) we plot a graph of k versus their WCSS value. Surprisingly the graph looks like an elbow (which we will see later). Also, When k=1 the       WCSS has the highest value but with increasing k value WCSS value starts to decrease. We choose that value of k from where the graph starts to look like a straight line.
-
-
-More on KMeans clustering - <https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/>
